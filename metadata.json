@@ -1,0 +1,6 @@
+{
+  "name": "inkaedu - Lentera Modern Edtech",
+  "description": "Platform ekosistem edukasi teknologi, bootcamp intensif, ruang belajar interaktif, komunitas tanya mentor, dan hub karier.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#783100", "tertiary-fixed": "#ffdbca", "primary-fixed-dim": "#bac3ff", "on-secondary-container": "#006d77", "on-secondary-fixed": "#001f23", "on-tertiary": "#ffffff", "inverse-on-surface": "#eef0ff", "primary-fixed": "#dee0ff", "on-primary-fixed-variant": "#002eca", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary-fixed": "#341100", "surface-container-low": "#f2f3ff", "secondary-container": "#82f0fe", "badge-amber-surface": "#FEF3C7", "secondary": "#006972", "track-cyan-surface": "#E4FEFF", "on-error-container": "#93000a", "on-surface-variant": "#444656", "inverse-primary": "#bac3ff", "surface-container-highest": "#dae2fd", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#67d6e4", "badge-amber": "#F59E0B", "on-surface": "#131b2e", "slate-surface": "#F8FAFC", "border-subtle": "#E2E8F0", "surface-tint": "#1f46f5", "surface-dim": "#d2d9f4", "secondary-fixed": "#8df2ff", "on-background": "#131b2e", "surface-bright": "#faf8ff", "primary": "#002eca", "tertiary-container": "#9d4300", "inverse-surface": "#283044", "error": "#ba1a1a", "outline": "#747688", "surface-container-high": "#e2e7ff", "error-container": "#ffdad6", "background": "#faf8ff", "surface-variant": "#dae2fd", "on-error": "#ffffff", "on-primary-fixed": "#00105c", "tertiary-fixed-dim": "#ffb690", "outline-variant": "#c4c5d9", "on-tertiary-fixed-variant": "#783200", "on-tertiary-container": "#ffceb6", "surface-container": "#eaedff", "on-secondary-fixed-variant": "#004f56", "on-primary-container": "#d2d6ff", "surface": "#faf8ff", "mentor-verified": "#059669", "primary-container": "#1f46f5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem" }, "fontFamily": { "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="inkaedu Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqGjGTv4UZSykVr-HgzwMbzbe3892hQh-5ayvc0LHt7O59_ikFBPqFtv7MGym_Kp_1Ed2oAlbuZmbrGMofws0omc33APZVe2MX9bvLln8YN9ctnqJjPFTNMTEf2sfrurQ1N8J0YEvhnB9fq7m_H_ReiATYGtGF3isWNDl51DHUVwx7qF1NnGoai0AKWWkOroaWKno2szzMH84RfKV73jRkh5ecG_9hxzVOg8vCNBY7EAmdMOzyDvoT"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold truncate leading-none">inkaedu</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Profil &amp; Hub Karier</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifikasi" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><a aria-label="Profil &amp; Hub Karier" class="w-11 h-11 flex items-center justify-center rounded-full" data-path="profil-dan-hub-karier" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZbDIQjhXSh2DLxebx9AD6RPGcO1IzNNIkVYzZjpXjLtkxzFkyCv4Y4Rf3vbq1CmM7REUrGC3yHBm56IuT1azu4kPlpyi_cL6RktpYwMq0TvdnjGo_wwx7uCtzZLguwyz1XlY8pUyoJg72vkNw5R9soALGNkqLbRhCfrAeJo9-8BziO7ChD5IpmkqRVTLn1kNtKdVlbNJAXqVIUkZM-f1TmS2tU7g7GJPBueREecBxEb8ZsGnb1_gK"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full px-margin pb-10 space-y-space-md">
+<!-- Subpage Top Bar -->
+<div class="flex items-center justify-between pt-space-xs pb-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<a aria-label="Kembali ke Profil" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors shadow-sm" data-path="profil-dan-hub-karier" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</a>
+<div class="min-w-0">
+<h1 class="font-headline-md text-headline-md text-on-surface truncate">Akun &amp; Pengaturan</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Kelola data personal &amp; preferensi belajar</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-track-cyan-surface text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+      Siswa Aktif
+    </span>
+</div>
+<!-- Student Profile Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-36 h-36 bg-gradient-to-br from-primary-fixed to-secondary-container opacity-40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Portrait photography of an enthusiastic Indonesian female student Amanda Maharani, early twenties, warm ambient warm-toned studio lighting, casual modern collegiate attire, smiling gently toward camera, clean minimalist pastel background with hints of edtech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChO_zixgnGrcUVAiuj4quONv7vlAg-GEDtO2HhvPQb0HSItn4au7PpuGi-or1xutDNMrQOtfxOYh18CVi-8jXa8Fq0q8Hcny8ZDXkA9oS075yU-CFD2TcnOVoEP51IuGDp7E99kl0p82mQt1yzkKvD6whLuuPeIBdnrMSSnuJiCf12nVlhvqLA5hxZiJdoKu1wJ2_iu_7g5ssqILoN677pDUat5G2YHt7FKE4dxW0o7QzBtJ3Ac0fM"/>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-mentor-verified text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div class="min-w-0 flex-1 space-y-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Amanda Maharani</h2>
+</div>
+<p class="font-label-md text-label-md text-primary truncate">Bootcamp Batch 11 • UI/UX Design</p>
+<div class="pt-1 flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[15px] shrink-0 text-outline">mail</span>
+<span class="truncate">amanda.maharani@email.com</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[15px] shrink-0 text-outline">phone_iphone</span>
+<span>+62 812-3456-7890</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Stats Snippet -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low rounded-lg p-2.5">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Belajar</span>
+<span class="font-headline-sm text-headline-sm text-primary">142 Jam</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak Aktif</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-badge-amber" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">14 Hari</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Predikat Akhir</span>
+<span class="font-headline-sm text-headline-sm text-mentor-verified">Grade A (94)</span>
+</div>
+</div>
+<!-- Edit Profile Action Button -->
+<button class="w-full h-11 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm flex items-center justify-center gap-2 active:scale-[0.99] transition-all" id="open-edit-modal-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Edit Profil Siswa &amp; Portofolio</span>
+</button>
+</div>
+<!-- Kelompok Menu 1: Aktivitas Akademik & Studi -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Aktivitas Akademik &amp; Studi</span>
+<span class="font-label-sm text-label-sm text-primary">4 Modul Terbuka</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Item 1: Edit Portofolio Shortcut -->
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="document.getElementById('open-edit-modal-btn').click()" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Edit Profil Pribadi &amp; Portofolio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">KTP, headline karier, tautan Behance, Figma &amp; GitHub</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</button>
+<!-- Item 2: Riwayat Pembelajaran -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-track-cyan-surface text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<div class="flex items-center gap-2">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Riwayat Pembelajaran</p>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">142 Jam</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Log rekaman webinar, sesi live class &amp; catatan belajar</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Item 3: Transkrip Nilai -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<div class="flex items-center gap-2">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Hasil Studi &amp; Transkrip Nilai</p>
+<span class="px-1.5 py-0.5 rounded bg-badge-amber-surface text-badge-amber font-label-sm text-label-sm">Grade A</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Skor Capstone, evaluasi mentor &amp; unduh transkrip PDF</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Item 4: Sertifikat Digital -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-mentor-verified flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<div class="flex items-center gap-2">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Sertifikat &amp; Lisensi</p>
+<span class="px-1.5 py-0.5 rounded-full bg-track-cyan-surface text-secondary font-label-sm text-label-sm">3 Tersedia</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Sertifikat kompetensi QR code resmi terverifikasi inkaedu</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Kelompok Menu 2: Preferensi & Akun (Pengaturan) -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Preferensi &amp; Keamanan Akun</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Notifikasi -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Pengaturan Notifikasi</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Jadwal Zoom, diskusi mentor, peringatan WhatsApp</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Keamanan & 2FA -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<div class="flex items-center gap-2">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Keamanan &amp; Kata Sandi</p>
+<span class="px-1.5 py-0.5 rounded bg-track-cyan-surface text-secondary font-label-sm text-label-sm">2FA Aktif</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Ganti PIN/password &amp; kelola 2 perangkat terhubung</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Pembayaran -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">credit_card</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Metode Pembayaran &amp; Tagihan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">BCA VA tersimpan, e-wallet, kuitansi pajak &amp; garansi</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Bahasa & Tampilan -->
+<div class="w-full p-space-md flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Bahasa &amp; Preferensi Sistem</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Bahasa Indonesia (ID) • Format WIB</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary px-2.5 py-1 bg-surface-container-high rounded-full">ID</span>
+</div>
+</div>
+</div>
+<!-- Kelompok Menu 3: Bantuan, Legal & Kebijakan -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Bantuan &amp; Kebijakan Resmi</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Live Chat Student Advisor -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-track-cyan-surface text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<div class="flex items-center gap-2">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Pusat Bantuan &amp; Live Chat</p>
+<span class="w-2 h-2 rounded-full bg-mentor-verified"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Konsultasi karier &amp; kendala belajar dengan Student Advisor</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Syarat & Ketentuan -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">gavel</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Syarat &amp; Ketentuan Penggunaan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Hak cipta silabus &amp; etika komunitas inkaedu</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Kebijakan Privasi -->
+<a class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors bg-surface-container-lowest" href="#">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">shield</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Kebijakan Privasi &amp; Data</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Standar perlindungan ISO 27001 &amp; PSE Kominfo</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0 text-[20px] ml-2">chevron_right</span>
+</a>
+<!-- Versi Aplikasi -->
+<div class="w-full p-space-md flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">info</span>
+</div>
+<div class="min-w-0 space-y-0.5">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Tentang inkaedu</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Lisensi PT inkaedu Edukasi Indonesia</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2 py-0.5 bg-surface-container-low rounded">v2.4.0 (2025)</span>
+</div>
+</div>
+</div>
+<!-- Logout Section -->
+<div class="space-y-3 pt-2">
+<button class="w-full h-12 bg-error-container text-error font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 active:bg-error active:text-on-error transition-all shadow-sm" id="logout-trigger-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Keluar dari Akun Siswa</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm text-center">
+<span class="material-symbols-outlined text-[15px] text-mentor-verified">lock_clock</span>
+<span>Sesi login Anda dienkripsi secara aman dengan TLS 1.3</span>
+</div>
+</div>
+<!-- Bottom Sheet / Modal: Edit Profil Siswa -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex-col justify-end transition-opacity" id="edit-profile-modal">
+<div class="bg-surface-container-lowest w-full max-h-[795px] rounded-t-2xl shadow-xl flex flex-col overflow-hidden animate-in slide-in-from-bottom duration-300">
+<!-- Modal Header -->
+<div class="p-space-md flex items-center justify-between bg-surface-container-lowest shrink-0 shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ubah Profil &amp; Tautan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Perbarui identitas dan portofolio profesional</p>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-colors" id="close-edit-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Scrollable Form) -->
+<form class="p-space-md overflow-y-auto space-y-space-md flex-1" id="profile-edit-form">
+<!-- Foto Profil Uploader -->
+<div class="flex items-center gap-space-md p-3 bg-surface-container-low rounded-xl">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Close up profile picture of student Amanda Maharani smiling gently with clean studio lighting, high resolution edtech portrait style" id="form-avatar-preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB0l_xzxVaVRmAsJN_Zj3nO7J8woN1FGTrGq-FruQA0qjQJ8tWluk3MVLYcaoIjh6GETBtv5vkw8KTbT_yDglWs-lEw_w4Q6uX3Hsgq7TW0BwZ3Kbn5CnoRGA92r0-qCjJn95d9FG5VSyjr1l_aoz8trdtJy7gilLRbAdG2u0oZuDMBTdlt_sVXiONjhEcYMgaR_3kHE8aJfSXlAI8vfN4e8mYDUcsLQOCstuUfAMHQ49Yo7aHTLMn"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]">photo_camera</span>
+</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-headline-sm text-headline-sm text-on-surface text-[14px]">Foto Profil Anda</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Format PNG/JPG, maks 2MB (Formal/Semi-formal)</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest text-primary font-label-sm text-label-sm shrink-0" type="button">
+            Ganti Foto
+          </button>
+</div>
+<!-- Field 1: Nama Lengkap -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface">Nama Lengkap (Sesuai KTP/Ijazah)</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none transition-all" required="" type="text" value="Amanda Maharani"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Nama ini yang akan dicetak pada Sertifikat Kelulusan resmi.</p>
+</div>
+<!-- Field 2: Headline Profesional -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface">Headline Karier / Bio Singkat</label>
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none transition-all" type="text" value="Aspiring Product &amp; UI/UX Designer | Batch 11 inkaedu"/>
+</div>
+<!-- Field 3: Kontak WhatsApp -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface">Nomor WhatsApp Aktif</label>
+<div class="flex gap-2">
+<div class="h-12 px-3 rounded-lg bg-surface-container-low flex items-center font-label-md text-label-md text-on-surface-variant shrink-0">+62</div>
+<input class="flex-1 h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none transition-all" type="tel" value="812-3456-7890"/>
+</div>
+</div>
+<!-- Field 4: Portofolio & Social Links -->
+<div class="space-y-2 pt-1">
+<label class="block font-label-md text-label-md text-on-surface">Tautan Portofolio &amp; Media Profesional</label>
+<div class="space-y-2">
+<!-- Figma/Behance -->
+<div class="flex items-center gap-2 h-12 px-3 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">palette</span>
+<input class="flex-1 bg-transparent text-on-surface font-body-sm text-body-sm outline-none" placeholder="Tautan Behance / Dribbble" type="url" value="https://behance.net/amandamaharani"/>
+</div>
+<!-- LinkedIn -->
+<div class="flex items-center gap-2 h-12 px-3 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">link</span>
+<input class="flex-1 bg-transparent text-on-surface font-body-sm text-body-sm outline-none" placeholder="Profil LinkedIn" type="url" value="https://linkedin.com/in/amanda-maharani-ui"/>
+</div>
+<!-- GitHub / Notion Portfolio -->
+<div class="flex items-center gap-2 h-12 px-3 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant shrink-0">folder_shared</span>
+<input class="flex-1 bg-transparent text-on-surface font-body-sm text-body-sm outline-none" placeholder="https://notion.so/portofolio-amanda (Opsional)" type="url"/>
+</div>
+</div>
+</div>
+<!-- Action Submit inside Modal -->
+<div class="pt-2 pb-4">
+<button class="w-full h-12 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md flex items-center justify-center gap-2 active:scale-[0.99] transition-all" type="submit">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Simpan Perubahan Data Siswa</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Logout Confirmation Dialog Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="logout-dialog-modal">
+<div class="bg-surface-container-lowest max-w-sm w-full rounded-2xl p-space-md shadow-2xl space-y-space-md text-center animate-in zoom-in-95 duration-200">
+<div class="w-14 h-14 mx-auto rounded-full bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">logout</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-md text-headline-md text-on-surface">Keluar dari Akun?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Anda harus memasukkan email dan kata sandi kembali untuk mengakses materi bootcamp inkaedu.</p>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<button class="h-11 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" id="cancel-logout-btn" type="button">
+          Batal
+        </button>
+<button class="h-11 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm active:opacity-90 transition-opacity" id="confirm-logout-btn" type="button">
+          Ya, Keluar
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg items-center gap-2 text-label-md font-label-md hidden transition-all duration-300" id="save-toast">
+<span class="material-symbols-outlined text-[18px] text-mentor-verified">check_circle</span>
+<span id="toast-message">Data profil siswa berhasil diperbarui!</span>
+</div>
+</div>
+<script>
+  (function initAccountSettingsInteractions() {
+    const editModal = document.getElementById('edit-profile-modal');
+    const openEditBtn = document.getElementById('open-edit-modal-btn');
+    const closeEditBtn = document.getElementById('close-edit-modal-btn');
+    const editForm = document.getElementById('profile-edit-form');
+    
+    const logoutModal = document.getElementById('logout-dialog-modal');
+    const logoutTriggerBtn = document.getElementById('logout-trigger-btn');
+    const cancelLogoutBtn = document.getElementById('cancel-logout-btn');
+    const confirmLogoutBtn = document.getElementById('confirm-logout-btn');
+
+    const toast = document.getElementById('save-toast');
+    const toastMsg = document.getElementById('toast-message');
+
+    function showToast(message) {
+      if (!toast) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 2800);
+    }
+
+    if (openEditBtn && editModal) {
+      openEditBtn.addEventListener('click', () => {
+        editModal.classList.remove('hidden');
+        editModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    if (closeEditBtn && editModal) {
+      closeEditBtn.addEventListener('click', () => {
+        editModal.classList.add('hidden');
+        editModal.classList.remove('flex');
+        document.body.style.overflow = '';
+      });
+    }
+
+    if (editForm) {
+      editForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        editModal.classList.add('hidden');
+        editModal.classList.remove('flex');
+        document.body.style.overflow = '';
+        showToast('Profil & Tautan Portofolio Berhasil Disimpan!');
+      });
+    }
+
+    if (logoutTriggerBtn && logoutModal) {
+      logoutTriggerBtn.addEventListener('click', () => {
+        logoutModal.classList.remove('hidden');
+        logoutModal.classList.add('flex');
+      });
+    }
+
+    if (cancelLogoutBtn && logoutModal) {
+      cancelLogoutBtn.addEventListener('click', () => {
+        logoutModal.classList.add('hidden');
+        logoutModal.classList.remove('flex');
+      });
+    }
+
+    if (confirmLogoutBtn && logoutModal) {
+      confirmLogoutBtn.addEventListener('click', () => {
+        logoutModal.classList.add('hidden');
+        logoutModal.classList.remove('flex');
+        showToast('Sesi ditutup. Mengalihkan ke halaman login...');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,23,42,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-1"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda-inkaedu" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-[10px] leading-tight">Beranda</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="program-katalog-bootcamp" href="#"><span class="material-symbols-outlined text-[22px]">school</span><span class="font-label-sm text-[10px] leading-tight">Program</span></a><a class="relative flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="komunitas-dan-tanya-mentor" href="#"><span class="relative"><span class="material-symbols-outlined text-[22px]">forum</span><span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-tertiary-container ring-1 ring-surface"></span></span><span class="font-label-sm text-[10px] leading-tight">Komunitas</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ruang-belajar-inkaedu" href="#"><span class="material-symbols-outlined text-[22px]">local_library</span><span class="font-label-sm text-[10px] leading-tight">Belajar</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profil-dan-hub-karier" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-[10px] leading-tight">Profil</span></a></div></nav></body></html>

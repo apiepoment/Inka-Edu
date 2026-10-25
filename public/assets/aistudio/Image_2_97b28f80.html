@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#783100", "tertiary-fixed": "#ffdbca", "primary-fixed-dim": "#bac3ff", "on-secondary-container": "#006d77", "on-secondary-fixed": "#001f23", "on-tertiary": "#ffffff", "inverse-on-surface": "#eef0ff", "primary-fixed": "#dee0ff", "on-primary-fixed-variant": "#002eca", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary-fixed": "#341100", "surface-container-low": "#f2f3ff", "secondary-container": "#82f0fe", "badge-amber-surface": "#FEF3C7", "secondary": "#006972", "track-cyan-surface": "#E4FEFF", "on-error-container": "#93000a", "on-surface-variant": "#444656", "inverse-primary": "#bac3ff", "surface-container-highest": "#dae2fd", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#67d6e4", "badge-amber": "#F59E0B", "on-surface": "#131b2e", "slate-surface": "#F8FAFC", "border-subtle": "#E2E8F0", "surface-tint": "#1f46f5", "surface-dim": "#d2d9f4", "secondary-fixed": "#8df2ff", "on-background": "#131b2e", "surface-bright": "#faf8ff", "primary": "#002eca", "tertiary-container": "#9d4300", "inverse-surface": "#283044", "error": "#ba1a1a", "outline": "#747688", "surface-container-high": "#e2e7ff", "error-container": "#ffdad6", "background": "#faf8ff", "surface-variant": "#dae2fd", "on-error": "#ffffff", "on-primary-fixed": "#00105c", "tertiary-fixed-dim": "#ffb690", "outline-variant": "#c4c5d9", "on-tertiary-fixed-variant": "#783200", "on-tertiary-container": "#ffceb6", "surface-container": "#eaedff", "on-secondary-fixed-variant": "#004f56", "on-primary-container": "#d2d6ff", "surface": "#faf8ff", "mentor-verified": "#059669", "primary-container": "#1f46f5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem" }, "fontFamily": { "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="inkaedu Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqGjGTv4UZSykVr-HgzwMbzbe3892hQh-5ayvc0LHt7O59_ikFBPqFtv7MGym_Kp_1Ed2oAlbuZmbrGMofws0omc33APZVe2MX9bvLln8YN9ctnqJjPFTNMTEf2sfrurQ1N8J0YEvhnB9fq7m_H_ReiATYGtGF3isWNDl51DHUVwx7qF1NnGoai0AKWWkOroaWKno2szzMH84RfKV73jRkh5ecG_9hxzVOg8vCNBY7EAmdMOzyDvoT"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold truncate leading-none">inkaedu</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Komunitas</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifikasi" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><a aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full" data-path="profil" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZbDIQjhXSh2DLxebx9AD6RPGcO1IzNNIkVYzZjpXjLtkxzFkyCv4Y4Rf3vbq1CmM7REUrGC3yHBm56IuT1azu4kPlpyi_cL6RktpYwMq0TvdnjGo_wwx7uCtzZLguwyz1XlY8pUyoJg72vkNw5R9soALGNkqLbRhCfrAeJo9-8BziO7ChD5IpmkqRVTLn1kNtKdVlbNJAXqVIUkZM-f1TmS2tU7g7GJPBueREecBxEb8ZsGnb1_gK"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Header Section Komunitas -->
+<section class="px-gutter pt-4 pb-3 flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-track-cyan-surface text-secondary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px]">forum</span>
+<span>Ruang Kolaborasi &amp; Karir</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">
+      Komunitas Belajar &amp; Tanya Mentor
+    </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Diskusikan tugas, bedah portofolio, dan dapatkan solusi langsung dari praktisi industri berpengalaman.
+    </p>
+</section>
+<!-- CTA Card "Mulai Tanya Mentor" -->
+<section class="px-gutter my-2">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-container via-surface-tint to-primary p-4 shadow-sm text-on-primary">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+<div class="absolute right-4 top-3 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">psychology_alt</span>
+</div>
+<div class="relative z-10 flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-on-primary">help_center</span>
+</span>
+<span class="font-label-md text-label-md text-on-primary-container bg-white/15 px-2.5 py-0.5 rounded-full">
+            Respons Cepat • Rata-rata 15 Menit
+          </span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-primary font-bold">
+            Punya kendala belajar atau review karier?
+          </h2>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">
+            Tanyakan studi kasus, error coding, atau telaah portofolio desainmu hari ini.
+          </p>
+</div>
+<button class="mt-1 w-full h-11 bg-surface-container-lowest text-primary font-label-lg text-label-lg rounded-lg shadow-sm flex items-center justify-center gap-2 active:scale-[0.98] transition-transform" id="btn-ajukan-tanya">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Ajukan Pertanyaan ke Mentor</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Baris "Mentor Aktif Hari Ini" -->
+<section class="mt-3 flex flex-col gap-2.5">
+<div class="px-gutter flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-mentor-verified opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-mentor-verified"></span>
+</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+          Mentor Aktif Hari Ini
+        </h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 Online</span>
+</div>
+<!-- Horizontal Scroll Mentor List -->
+<div class="flex gap-3 overflow-x-auto px-gutter no-scrollbar py-1">
+<!-- Mentor 1 -->
+<div class="flex flex-col items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm w-36 shrink-0 text-center gap-2">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Close up professional portrait of Rizky, an energetic male Indonesian Lead Product Designer smiling warmly in a bright modern tech office studio wearing a navy casual blazer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7H8EGmGuL2c6G-0DsPJbtRI5RNwhdtlQxFWhuLfzEi096vN3-AlszPrsqIVCVNUHrz4mYu3ebWS1I5_TkI50bJs-E0VUVOe2pzeKDGASeRJ06dOFDIT9KYG7o-HO4MkrCUQaPGA9j5nbBQRVRSr2sRHWHJXO8iI13AoQpq2olFvdFpw0xC_PquA4tvgy3wPj5RxJSXdcelKnasOpRP9XAdcvhfT7nIk1gLE7iifg2VHDdk5XMDbc_"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-mentor-verified ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="min-w-0 w-full">
+<p class="font-label-md text-label-md text-on-surface truncate font-semibold">Rizky Ardiansyah</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Lead UX @ Unicorn</p>
+</div>
+<button class="w-full py-1.5 px-2 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] active:bg-primary active:text-on-primary transition-colors">
+          Konsultasi 1-on-1
+        </button>
+</div>
+<!-- Mentor 2 -->
+<div class="flex flex-col items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm w-36 shrink-0 text-center gap-2">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Professional studio portrait of Siti, an Indonesian female Data Scientist wearing a soft grey hijab and stylish spectacles with a gentle confident smile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwpmDsuE2kBBWzoonwBIBdRMwf2KQ-GDp2dTYsfHvaG_7ByrnVddhtSvKbUNYErWASv2AdjqCi3qk_tsnfnSjcveL6WIeICnD5trnUji4m1yDWfkHTjB2iyYJh3v5LXpLhtonjJ-Ij8H2x5k6Im1u6MjLLsXvWpYPpvHm1z9euX8yV0s554TeLDsdksC-Zs7xjIGT5ekfs3D6_JodpzpNXePJQQJigLGVKq_YCwxgFuA1C4GeNlPzw"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-mentor-verified ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="min-w-0 w-full">
+<p class="font-label-md text-label-md text-on-surface truncate font-semibold">Siti Nurhaliza</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Data Scientist @ BUMN</p>
+</div>
+<button class="w-full py-1.5 px-2 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] active:bg-primary active:text-on-primary transition-colors">
+          Konsultasi 1-on-1
+        </button>
+</div>
+<!-- Mentor 3 -->
+<div class="flex flex-col items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm w-36 shrink-0 text-center gap-2">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Portrait of Fajar, a sharp Southeast Asian male Senior Frontend Developer with headphones around neck and a friendly approachable expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ygyG3pSgSatH5MgPtQKJduYitHOxHTplxHqIN5GBz8XFZLjlu41v1U2fkv3tWyE1o1xIDiRqaF2weNrKFqfcU9ed6AWJj4IcFqhy8HoOUU_-xi4GhhLyHFYIpBLyvOUTxY74encbGo0aPwtya5FEuS-BCpiPqHq_nnuA6kXJsid9AxJtcuFGJ073IUOGhPCrgaMYQ8o0a9KFIs-Wv7isKL9N_lUDfrJNndW6hfAb1oO0U5v492kz"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-mentor-verified ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="min-w-0 w-full">
+<p class="font-label-md text-label-md text-on-surface truncate font-semibold">Fajar Nugraha</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Senior Frontend Eng</p>
+</div>
+<button class="w-full py-1.5 px-2 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] active:bg-primary active:text-on-primary transition-colors">
+          Konsultasi 1-on-1
+        </button>
+</div>
+<!-- Mentor 4 -->
+<div class="flex flex-col items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm w-36 shrink-0 text-center gap-2">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Portrait of Jessica, a friendly female Career Coach and Tech Recruiter smiling brightly in a warm creative workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqk8OqzmMkVGtYLiaeS6fKhKyh1DbVHGohRHi0JbaMHcu1Dr_ommPRNnorG05XCncVSBT5Ibsfgggx0Vmkh8mTgt6SPdZ2xJBLRpLFGnHYzH1q4hAjSGp_vc5OOJXZNIKu0gq3UmZv-Xha3hILTqq9N640uAc7kS3w4nHcrg2AV4q1xevOt0VmsaTKN1DYR5ECyhEr1f3z60VNGKEbOPE9-82hobrEzsSm0Ha6MgP57-MWoJGci_Cj"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-mentor-verified ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="min-w-0 w-full">
+<p class="font-label-md text-label-md text-on-surface truncate font-semibold">Jessica Tania</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Career Coach inkaedu</p>
+</div>
+<button class="w-full py-1.5 px-2 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] active:bg-primary active:text-on-primary transition-colors">
+          Konsultasi 1-on-1
+        </button>
+</div>
+</div>
+</section>
+<!-- Filter Tab Horizontal -->
+<section class="mt-4 px-gutter">
+<div class="flex gap-2 overflow-x-auto no-scrollbar py-1">
+<button class="filter-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm" data-tag="all">
+        Semua Diskusi
+      </button>
+<button class="filter-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-tag="trending">
+        🔥 Terpopuler
+      </button>
+<button class="filter-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-tag="uiux">
+        UI/UX
+      </button>
+<button class="filter-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-tag="data">
+        Data &amp; AI
+      </button>
+<button class="filter-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-tag="coding">
+        Coding &amp; Web
+      </button>
+<button class="filter-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-tag="cv">
+        Review CV &amp; Portofolio
+      </button>
+<button class="filter-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-tag="verified">
+        ✅ Terjawab Mentor
+      </button>
+</div>
+</section>
+<!-- Feed Diskusi & Tanya Mentor -->
+<section class="px-gutter mt-3 flex flex-col gap-3.5">
+<!-- CARD 1: Tanya Mentor Terjawab -->
+<article class="feed-card bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<!-- Tag Pills & Status -->
+<div class="flex items-center justify-between gap-2 flex-wrap">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-track-cyan-surface text-secondary font-label-sm text-[11px] font-semibold">
+            UI/UX Design
+          </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+            Review Portofolio
+          </span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-[10px] text-mentor-verified bg-emerald-50 px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+          Terverifikasi
+        </span>
+</div>
+<!-- Penanya Info -->
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Casual profile photo of Budi Santoso, an enthusiastic young Indonesian college student wearing a green hoodie in a bright campus library." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqcHvBF07RKsg_XBJLT20XJXHyo3mmKBwYdFJ-1-t7j3oUoCXjSI68IiHXZNpFxg2KIuB9mkXscA3nJwQwH5BulVzcsPNMMsqYNax0ygbQ0cpXiEneCUnWYq44Rz5gwbZiGcUbJgiMC88ZenQQH7n8J2UuxkOdEYKmfMqBLm6bn2JOvBMegNLBWQOu6d3cqk2a5jSy6zzb5DUuVlqArUhSx5_LiL8XvqlR63yv6vEJlzO_Nr0hvXFN"/>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Budi Santoso</span>
+<span>•</span>
+<span>2 jam lalu</span>
+</div>
+</div>
+<!-- Judul Pertanyaan -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+        Bagaimana cara menyusun case study UI/UX pertama kali tanpa pengalaman kerja formal?
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+        Halo mentor, saya baru menyelesaikan program intensif Figma. Saat ini sedang bingung memilih topik studi kasus redesign aplikasi lokal atau membuat produk dari nol (0 to 1) agar dilirik recruiter?
+      </p>
+<!-- Highlighted Box: Jawaban Terverifikasi Mentor -->
+<div class="rounded-xl bg-surface-container-low p-3.5 flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-badge-amber-surface text-badge-amber font-label-sm text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+            Jawaban Terverifikasi Mentor
+          </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Solusi Terbaik</span>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of Dimas Suryo, a senior Indonesian tech product designer with stylish short hair wearing a minimal dark grey shirt against a bright modern creative office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPMDKttxg6_RgjFesejxMg0IhxoBMF9yf06CpnMM3OM6YslV1wf7_f6BWIvY0aZgreSL7DkTTVxzaRscjjuMj8_7yOisWhYvJk85gF_yclqUL8jJtrP0ndrZ9jzAcRkzSjHXK7SzdISeF8PhIV4GaewPeWZFepP6qMFg5rnStsOOyNKWtMt5tFSNdmQi913qSbp9dBGEhMheMMx_13_62S71DH-1e5X6yuHwHhm-I5VwUmtvCnkiVL"/>
+<span class="material-symbols-outlined text-[13px] text-mentor-verified absolute -bottom-0.5 -right-0.5 bg-surface-container-lowest rounded-full p-0.5" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Dimas Suryo</span>
+<span class="font-label-sm text-[10px] text-secondary font-semibold bg-secondary-container/40 px-1.5 py-0.2 rounded">Mentor</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Lead Product Designer @ Tech Unicorn</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2.5">
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+            “Fokus pada problem statement yang nyata dan jelaskan alasan setiap iterasi desain, bukan hanya tampilan visual akhir. Tunjukkan alur research micro sederhana, user testing 3-5 teman, dan metrik keberhasilan desainmu.”
+          </p>
+</div>
+</div>
+<!-- Footer Interaksi -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<button class="upvote-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm active:scale-95 transition-all" data-voted="false">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span class="vote-count">48</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>12 Balasan</span>
+</button>
+</div>
+<div class="flex items-center gap-1">
+<button class="bookmark-btn w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2: Diskusi Coding & Troubleshooting -->
+<article class="feed-card bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<!-- Tag Pills & Status -->
+<div class="flex items-center justify-between gap-2 flex-wrap">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">
+            Fullstack Web
+          </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+            React &amp; Next.js
+          </span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-[10px] text-badge-amber bg-amber-50 px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+          Menunggu Review
+        </span>
+</div>
+<!-- Penanya Info -->
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Profile of Sarah Melati, a young Indonesian female junior software developer smiling comfortably while sitting by a laptop with code editor open." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkJeFc6pb25e_LB9_J8mr8pwsN_gW0uVBThhOHgedgIv56zRB_FmUfQSQlRXvKriinH0DV_bTh2g863R8wucsl0zpTJRpz6p4kjhvcnzFQVwpoMJ6MKJmQclhCHjM2zPfNllDcBYFNeXTDbIF85HUFz7PiuhzPrqeJkKVkiYJauj0T511r4HnMXMIBLcmq6XGs6p9q82kAcjtbirp6kHSuKGFZZ0zFvZpBZsgg2fdXxPij1UHV4tbf"/>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Sarah Melati</span>
+<span>•</span>
+<span>4 jam lalu</span>
+</div>
+</div>
+<!-- Judul Pertanyaan -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+        Error useEffect looping saat fetch data API di Next.js 14, ada best practice solusinya?
+      </h3>
+<!-- Code Snippet Mini Block -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-lg p-3 font-mono text-[11px] leading-relaxed overflow-x-auto">
+<span class="text-tertiary-fixed">// Snippet kasus:</span><br/>
+        useEffect(() =&gt; {<br/>
+          fetchData(params).then(res =&gt; setData(res));<br/>
+        }, [params]); <span class="text-error-container">// infinite re-render triggered</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Sudah mencoba memasukkan useMemo untuk params namun tetap triggered berkali-kali di App Router. Mohon insight arsitektur data fetching yang paling aman.
+      </p>
+<!-- Badge status respon -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface-variant text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[18px] text-badge-amber">pending_actions</span>
+<span>Menunggu balasan mentor kedua • 1 mentor mereview</span>
+</div>
+<!-- Footer Interaksi -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<button class="upvote-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm active:scale-95 transition-all" data-voted="false">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span class="vote-count">24</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>6 Jawaban Komunitas</span>
+</button>
+</div>
+<div class="flex items-center gap-1">
+<button class="bookmark-btn w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3: Karier & Peluang Kerja -->
+<article class="feed-card bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<!-- Tag Pills & Status -->
+<div class="flex items-center justify-between gap-2 flex-wrap">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-badge-amber-surface text-tertiary-container font-label-sm text-[11px] font-semibold">
+            Career Tips
+          </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+            Gaji &amp; Nego
+          </span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-[10px] text-mentor-verified bg-emerald-50 px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          Verified Career Coach
+        </span>
+</div>
+<!-- Penanya Info -->
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Profile photo of Ilham Pratama, a clean-cut Indonesian fresh graduate male smiling eagerly outdoors in business casual polo shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA08EzgxqGJM4la3LNQwMb3cN-eJV55JNoUxJ6lBlolZJNNhD1zVvmg4da8cBNYqy6N0WlwAWFP_KDi3y4kzVzhc0XHvHDRODrvbBAFdRxE57gosXucLpZrNBejxMhqaTDUu_O6Ifn9XK-Zp8nKH1cWC4iMNpia4QeB0oLLkvrbPkbZYUnUkFU02V7bJpQsNAc4DdPGLmOviIuDdubUmqyiXG0ZUkWx626mBjiJswkLaXVd6aTqzD8o"/>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Ilham Pratama</span>
+<span>•</span>
+<span>Kemarin</span>
+</div>
+</div>
+<!-- Judul Pertanyaan -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+        Tips negosiasi gaji pertama untuk junior UI designer di Jakarta?
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Saya baru dapat offering pertama dari digital agency di Jakarta Selatan. Rentang gaji standar junior designer saat ini berapa dan bagaimana cara counter offer secara sopan tanpa terkesan arogan?
+      </p>
+<!-- Highlight Jawaban HR & Career Coach inkaedu -->
+<div class="rounded-xl bg-surface-container-low p-3.5 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<div class="relative shrink-0">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Portrait of Jessica Tania, Indonesian professional female HR leader and Career Coach in a stylish modern office background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaGnAdqvIDZr-9seInkXF95RF45VyDb-8dof6iYgT6wYhSjgCT2eAl9z0Jjh9Lrjb2gDnFHmQ7zMRygWA7JCTMu2_cDRNIc-2MiScH2kvqdZAC9Dl7nU2We6nPFeiEBy08yy1343zt21VK99DMvQFMU5gJPuHMpLCcHCDklgHR17ejNCs30RsQ3anqYSNJjwKFqmgPZxRvHdWF8JuBCuZq30H73e1WRySZ0bNx9l1J3lueO5SEvQK9"/>
+<span class="material-symbols-outlined text-[12px] text-mentor-verified absolute -bottom-0.5 -right-0.5 bg-surface-container-lowest rounded-full p-0.5" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Jessica Tania</span>
+<span class="font-label-sm text-[10px] text-on-primary bg-primary px-1.5 py-0.2 rounded font-semibold">HR Lead</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">HR &amp; Career Coach inkaedu</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed mt-0.5 bg-surface-container-lowest p-2.5 rounded-lg">
+          “Gunakan data pasar (standar entry-level Jakarta IDR 5.5 - 7.5 Jt tergantung kapabilitas prototype testing). Tanyakan paket total: tunjangan laptop, asuransi, dan review performa 6 bulan pertama.”
+        </p>
+</div>
+<!-- Footer Interaksi -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<button class="upvote-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm active:scale-95 transition-all" data-voted="false">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span class="vote-count">71</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>19 Diskusi</span>
+</button>
+</div>
+<div class="flex items-center gap-1">
+<button class="bookmark-btn w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Floating Micro-banner Tanya Mentor -->
+<div class="px-gutter mt-5">
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Butuh Review CV Kilat?</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Kirim draft PDF, mentor bedah dalam 24 jam</p>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm active:scale-95 transition-transform">
+        Upload CV
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Filter tab active switch
+  const tabs = document.querySelectorAll('.filter-tab');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => {
+        t.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        t.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      tab.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      tab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    });
+  });
+
+  // Upvote button interaction
+  const upvoteBtns = document.querySelectorAll('.upvote-btn');
+  upvoteBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const countSpan = btn.querySelector('.vote-count');
+      const icon = btn.querySelector('.material-symbols-outlined');
+      let count = parseInt(countSpan.textContent, 10);
+      const isVoted = btn.getAttribute('data-voted') === 'true';
+
+      if (!isVoted) {
+        btn.setAttribute('data-voted', 'true');
+        countSpan.textContent = count + 1;
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+        btn.classList.add('bg-primary', 'text-on-primary');
+        icon.style.fontVariationSettings = "'FILL' 1";
+      } else {
+        btn.setAttribute('data-voted', 'false');
+        countSpan.textContent = count - 1;
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+        icon.style.fontVariationSettings = "'FILL' 0";
+      }
+    });
+  });
+
+  // Bookmark toggle
+  const bookmarkBtns = document.querySelectorAll('.bookmark-btn');
+  bookmarkBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon.textContent === 'bookmark_border') {
+        icon.textContent = 'bookmark';
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.add('text-primary');
+      } else {
+        icon.textContent = 'bookmark_border';
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-primary');
+      }
+    });
+  });
+
+  // CTA Click Feedback
+  const askCta = document.getElementById('btn-ajukan-tanya');
+  if (askCta) {
+    askCta.addEventListener('click', () => {
+      askCta.classList.add('scale-95');
+      setTimeout(() => {
+        askCta.classList.remove('scale-95');
+      }, 150);
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,23,42,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-1"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-[10px] leading-tight">Beranda</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="program" href="#"><span class="material-symbols-outlined text-[22px]">school</span><span class="font-label-sm text-[10px] leading-tight">Program</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors text-primary-container font-semibold" data-path="komunitas" href="#"><span class="relative"><span class="material-symbols-outlined text-[22px]">forum</span><span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-tertiary-container ring-1 ring-surface"></span></span><span class="font-label-sm text-[10px] leading-tight">Komunitas</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ruang-belajar" href="#"><span class="material-symbols-outlined text-[22px]">local_library</span><span class="font-label-sm text-[10px] leading-tight">Belajar</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-[10px] leading-tight">Profil</span></a></div></nav></body></html>
